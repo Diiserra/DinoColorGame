@@ -3,16 +3,17 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
-.container{
+#myGame{
     width: 100%;
     height: 90%;
-    border: 2px solid black;
     position: relative;
 }
 
-.floor{
+#floor{
     width: 100%;
     height: 20%;
     background-color: 	#8B4513;
@@ -21,18 +22,19 @@ body{
 }
 
 #player{
-    width: 3%;
-    height: 10%;
+    width: 50px;
+    height: 70px;
     background-color: #00CED1;
     position: absolute;
+    top: 410px;
     left: 10%;
 }
 
-.cactus{
-    width: 3%;
-    height: 10%;
+#cactus{
+    width: 50px;
+    height: 70px;
     background-color: #32CD32;
     position: absolute;
     top: 70%;
-    left: 90%;
+    left: 101%;
 }

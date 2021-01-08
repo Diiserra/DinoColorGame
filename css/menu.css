@@ -1,0 +1,61 @@
+#startMenu{
+    width: 80%;
+    height: 90%;
+    background: url(/assets/gameWorld/menuBackground.gif) no-repeat;
+    background-size: 1150px;
+    position: relative;
+    visibility: visible;
+}
+
+.title{
+    color: olivedrab;
+    font-family: DinoLogo;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: white;
+    font-size: 92px;
+    position: absolute;
+    top: 280px;
+    left: 200px;
+    transform: rotate(-5deg);
+    z-index: 1;
+}
+
+.dino{
+    width: 250px;
+    height: 250px;
+    background-image: url(/assets/sprites/dinoGreen/dinoGreenJump.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    position: absolute;
+    top: 100px;
+    left: 320px;
+}
+
+.cacto{
+    width: 250px;
+    height: 250px;
+    background-image: url(/assets/sprites/cactus3.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    position: absolute;
+    top: 140px;
+    left: 490px;
+}
+
+#play{
+    width: 250px;
+    height: 250px;
+    background-image: url(/assets/gameWorld/play.png);
+    background-repeat: no-repeat;
+    background-size: 190px;
+    transform: rotate(5deg);
+    position: absolute;
+    top: 340px;
+    left: 620px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+#play:hover{
+    background-size: 210px;
+}

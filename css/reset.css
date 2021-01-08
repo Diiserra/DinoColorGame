@@ -3,3 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+@font-face{
+    font-family: Pixel;
+    src: url('/assets/fonts/Pixel.ttf');
+}
+
+@font-face{
+    font-family: DinoLogo;
+    src: url('/assets/fonts/DinoLogo.TTF');
+}

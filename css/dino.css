@@ -1,0 +1,70 @@
+#dino{
+    width: 56px;
+    height: 63px;
+    position: absolute;
+    z-index: 5;
+    top: 420px;
+    left: 140px;
+}
+
+.dinoStop{
+    background: url(/assets/sprites/dinoGreen/dinoGreenStop.png) no-repeat;
+    background-size: 222px;
+    background-position-x: 0px;
+    animation: stop 0.8s infinite steps(1);
+}
+
+@keyframes stop{
+    0%{
+        background-position-x: 0px;
+    }
+    25%{
+        background-position-x: -55px;
+    }
+    50%{
+        background-position-x: -111px;
+    }
+    100%{
+        background-position-x: -167px;
+    }
+}
+
+.dinoRunner{
+    background: url(/assets/sprites/dinoGreen/dinoGreenRunner.png) no-repeat;
+    background-size: 335px;
+    background-position-x: 0px;
+    animation: runner 0.5s infinite steps(1);
+}
+
+@keyframes runner{
+    0%{
+        background-position-x: 0px;
+    }
+    16%{
+        background-position-x: -56px;
+    }
+    32%{
+        background-position-x: -112px;
+    }
+    48%{
+        background-position-x: -168px;
+    }
+    64%{
+        background-position-x: -224px;
+    }
+    80%{
+        background-position-x: -280px;
+    }
+}
+
+.dinoJump{
+    background: url(/assets/sprites/dinoGreen/dinoGreenJump.png) no-repeat;
+    background-size: 56px;
+    background-position-x: 0px;
+}
+
+.dinoDead{
+    background: url(/assets/sprites/dinoGreen/dinoGreenDead.png) no-repeat;
+    background-size: 52px;
+    background-position-x: 0px;
+}

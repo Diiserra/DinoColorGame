@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Dino Color</title>
+    <link rel="stylesheet" href="css/gameWorld.css">
+    <link rel="stylesheet" href="css/dino.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>Dino Color</title>
 </head>
 <body>
+    <audio autoplay loop src="/assets/music/gameMusic.mp3"></audio>
+    <div id="startMenu">
+        <h1 class="title">DINOCOLOR</h1>
+        <div class="dino"></div>
+        <div class="cacto"></div>
+        <div id="play"></div>
+    </div>
     <div id="myGame">
+        <div id="reset"></div>
+        <h2 id="highScore"></h2>
+        <h2 id="score">SCORE :</h2>
+        <h2 id="scores">0</h2>
+        <h2 id="gameOver">GAME OVER</h2>
         <div id="mountain"></div>
         <div id="sand"></div>
         <div id="sand-cactus"></div>
         <div id="floor"></div>
-        <div id="player"></div>
-        <div id="cactus"></div>
+        <div id="dino" class="dinoStop"></div>
+        <div id="cactus-um"></div>
+        <div id="cactus-dois"></div>
     </div>
     <script src="js/script.js"></script>
 </body>

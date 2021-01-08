@@ -1,0 +1,148 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(33, 33, 33);
+}
+
+#myGame{
+    width: 0%;
+    height: 90%;
+    position: relative;
+    background: url(/assets/gameWorld/sky.png) repeat-x;
+    background-size: 5000px;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.intro{
+    animation: open 1s linear 0s 1 forwards;
+}
+
+@keyframes open{
+    to{
+        width: 80%;
+    }
+}
+
+#mountain{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background: url(/assets/gameWorld/mountain.png) repeat-x;
+    background-size: 340px;
+    background-position-x: 0px;
+    bottom: -235px;
+    z-index: 1;
+}
+
+#sand{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background: url(/assets/gameWorld/sand.png) repeat-x;
+    background-size: 255px;
+    background-position-x: 0px;
+    bottom: -280px;
+    z-index: 2;
+}
+
+#sand-cactus{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    background: url(/assets/gameWorld/cactus.png) repeat-x;
+    background-size: 120px;
+    background-position-x: 0px;
+    bottom: -295px;
+    z-index: 3;
+}
+
+#floor{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    background: url(/assets/gameWorld/floor.png) repeat-x;
+    background-size: 35px;
+    background-position-x: 0px;
+    bottom: 0%;
+    z-index: 4;
+}
+
+#cactus-um{
+    width: 65px;
+    height: 75px;
+    background: url(/assets/sprites/cactus3.png) no-repeat;
+    background-size: 60px;
+    position: absolute;
+    z-index: 5;
+    top: 415px;
+    left: 1095px;
+}
+
+#cactus-dois{
+    width: 65px;
+    height: 75px;
+    background: url(/assets/sprites/cactus4.png) no-repeat;
+    background-size: 66px;
+    position: absolute;
+    z-index: 5;
+    top: 415px;
+    left: 1595px;
+}
+
+#highScore{
+    font-family: Pixel;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 65px;
+    left: 50px;
+}
+
+#score{
+    font-family: Pixel;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+}
+
+#scores{
+    font-family: Pixel;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 40px;
+    left: 140px;
+}
+
+#gameOver{
+    font-family: Pixel;
+    color: white;
+    font-size: 38px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-55%);
+    z-index: 6;
+    visibility: hidden;
+}
+
+#reset{
+    width: 200px;
+    height: 65px;
+    background: url(/assets/gameWorld/reset.png) no-repeat;
+    background-size: 170px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+    cursor: pointer;
+    visibility: hidden;
+}
